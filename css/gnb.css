@@ -1,0 +1,305 @@
+/*@@@@@★★★★★★★☆☆☆☆☆☆☆ DESKTOP ☆☆☆☆☆☆☆★★★★★★★@@@@@*/
+@media screen and (min-width:1025px) {
+  /*★★★★★★★☆☆☆☆☆☆☆NAV MENU☆☆☆☆☆☆☆★★★★★★★*/
+  .hamburger {
+    position: fixed;
+    top: 25px;
+    right: 5%;
+    z-index: 2000;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  #hamburger-1.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #hamburger-1.is-active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger-1.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .parts {
+    width: 25%;
+    height: 100vh;
+    line-height: 100vh;
+    float: left;
+    position: fixed;
+    transition: .4s;
+    z-index: 1999;
+    text-align: center;
+    transition: transform 500ms cubic-bezier(.36, .07, .05, .94);
+  }
+
+  .parts.on {
+    transform: translateY(0);
+  }
+
+  .parts a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .parts h2 {
+    font-size: 2.8vw;
+    font-weight: 200;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10%;
+    display: inline;
+  }
+
+  .part-1 {
+    left: 0;
+    transform: translateY(100%);
+    background: rgba(0, 0, 0, 0.1) url(../images/culture.jpg)no-repeat center / cover;
+  }
+
+  .part-2 {
+    left: 25%;
+    transform: translateY(-100%);
+    background: url(../images/food2.jpg)no-repeat center / cover;
+  }
+
+  .part-3 {
+    left: 50%;
+    transform: translateY(100%);
+    background: url(../images/checkin2.jpg)no-repeat center / cover;
+  }
+
+  .part-4 {
+    left: 75%;
+    transform: translateY(-100%);
+    background: url(../images/shop.png)no-repeat center / cover;
+  }
+}
+
+/*@@@@@★★★★★★★☆☆☆☆☆☆☆ PAD ☆☆☆☆☆☆☆★★★★★★★@@@@@*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+  /*★★★★★★★☆☆☆☆☆☆☆NAV MENU☆☆☆☆☆☆☆★★★★★★★*/
+  .hamburger {
+    position: fixed;
+    top: 16px;
+    right: 5%;
+    z-index: 2000;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  #hamburger-1.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #hamburger-1.is-active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger-1.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .parts {
+    height: 25vh;
+    width: 100%;
+    line-height: 25vh;
+    float: left;
+    position: fixed;
+    transition: .4s;
+    z-index: 1999;
+    text-align: center;
+    transition: transform 500ms cubic-bezier(.36, .07, .05, .94);
+  }
+
+  .parts a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .parts h2 {
+    font-size: 4.5vw;
+    font-weight: 200;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px 10%;
+    display: inline;
+  }
+
+  .part-1 {
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    background: url(../images/culture.jpg)no-repeat center / cover;
+  }
+
+  .part-2 {
+    top: 25%;
+    left: 0;
+    transform: translateX(-100%);
+    background: url(../images/food2.jpg)no-repeat center / cover;
+  }
+
+  .part-3 {
+    top: 50%;
+    left: 0;
+    transform: translateX(100%);
+    background: url(../images/checkin2.jpg)no-repeat center / cover;
+  }
+
+  .part-4 {
+    top: 75%;
+    left: 0;
+    transform: translateX(-100%);
+    background: url(../images/shop.png)no-repeat center / cover;
+  }
+
+  .parts.on {
+    transform: translateX(0);
+  }
+}
+
+/*@@@@@★★★★★★★☆☆☆☆☆☆☆ MOBILE ☆☆☆☆☆☆☆★★★★★★★@@@@@*/
+@media screen and (max-width:767px) {
+
+	/*★★★★★★★☆☆☆☆☆☆☆NAV MENU☆☆☆☆☆☆☆★★★★★★★*/
+	.hamburger {
+		position: fixed;
+		top: 16px;
+		right: 5%;
+		z-index: 2000;
+	}
+
+	.hamburger .line {
+		width: 30px;
+		height: 2px;
+		background-color: #000;
+		display: block;
+		margin: 5px auto;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.hamburger:hover {
+		cursor: pointer;
+	}
+
+	#hamburger-1.is-active .line:nth-child(1) {
+		-webkit-transform: translateY(8px) rotate(45deg);
+		-ms-transform: translateY(8px) rotate(45deg);
+		-o-transform: translateY(8px) rotate(45deg);
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	#hamburger-1.is-active .line:nth-child(2) {
+		opacity: 0;
+	}
+
+	#hamburger-1.is-active .line:nth-child(3) {
+		-webkit-transform: translateY(-8px) rotate(-45deg);
+		-ms-transform: translateY(-8px) rotate(-45deg);
+		-o-transform: translateY(-8px) rotate(-45deg);
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.parts {
+		height: 25vh;
+		width: 100%;
+		line-height: 25vh;
+		float: left;
+		position: fixed;
+		transition: .4s;
+		z-index: 1999;
+		text-align: center;
+		transition: transform 500ms cubic-bezier(.36, .07, .05, .94);
+	}
+
+	.parts a {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.parts h2 {
+		font-size: 30px;
+		font-weight: 200;
+		color: #fff;
+		background: rgba(0, 0, 0, 0.6);
+		padding: 5px 10%;
+		display: inline;
+	}
+
+	.part-1 {
+		top: 0;
+		left: 0;
+		transform: translateX(100%);
+		background: url(../images/culture.jpg)no-repeat center / cover;
+	}
+
+	.part-2 {
+		top: 25%;
+		left: 0;
+		transform: translateX(-100%);
+		background: url(../images/food2.jpg)no-repeat center / cover;
+	}
+
+	.part-3 {
+		top: 50%;
+		left: 0;
+		transform: translateX(100%);
+		background: url(../images/checkin2.jpg)no-repeat center / cover;
+	}
+
+	.part-4 {
+		top: 75%;
+		left: 0;
+		transform: translateX(-100%);
+		background: url(../images/shop.png)no-repeat center / cover;
+	}
+
+	.parts.on {
+		transform: translateX(0);
+	}
+}

@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>checkin</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/total.css">
+	<link rel="stylesheet" href="css/gnb.css">
+	<link rel="stylesheet" href="css/checkin.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="css/jquery.modal.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link type="text/css" rel="stylesheet" href="css/lightgallery.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.easing.1.3.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/jquery.modal.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="js/lightgallery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+	<script src="js/mainscript.js"></script>
+</head>
+
+<body data-title="checkinpage" id="checkin">
+	<header>
+		<div class="move">
+			<span id="top_move"><img src="images/uparrow.png" alt="uparrow"></span>
+		</div>
+		<div class="wraper shadow">
+			<div class="wraper-inner">
+				<h1><a href="main.html"><img class="nlogo" src="images/log123.png" alt="로고"></a></h1>
+			</div>
+		</div>
+		<nav id="gnb">
+			<div id="menu">
+				<div class="hamburger" id="hamburger-1">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+				<div class="parts part-1">
+					<a href="#" class="underline blue">
+						<h2>CULTURE</h2>
+					</a>
+				</div>
+				<div class="parts part-2">
+					<a href="#" class="underline blue">
+						<h2>BUFFET</h2>
+					</a>
+				</div>
+				<div class="parts part-3">
+					<a href="checkin.html" class="underline blue">
+						<h2>CHECK-IN</h2>
+					</a>
+				</div>
+				<div class="parts part-4">
+					<a href="shop.html" class="underline blue">
+						<h2>SHOP</h2>
+					</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section id="contents" class="clearfix">
+		<div class="shop">
+			<h2>CHECK-IN</h2>
+		</div>
+		<div class="contentsWrap clearfix">
+			<div class="menuBox">
+				<h2 class="listTitle">LIST</h2>
+				<ul class="menuBoxList">
+					<li>
+						<h3 class="allList menulist on underline">ALL</h3>
+					</li>
+					<li>
+						<h3 class="hotelList menulist underline">HOTEL</h3>
+					</li>
+					<li>
+						<h3 class="resoltList menulist underline">RESOLT</h3>
+					</li>
+					<li>
+						<h3 class="hostelList menulist underline">HOSTEL</h3>
+					</li>
+					<li>
+						<h3 class="bnbList menulist underline">B&B</h3>
+					</li>
+				</ul>
+			</div>
+			<div class="itemBox">
+				<div class="itemBoxTitle">
+					<div class="itemBoxTitleWrap">
+						<h2>ALL</h2>
+						<h2>HOTEL</h2>
+						<h2>RESOLT</h2>
+						<h2>HOSTEL</h2>
+						<h2>B&B</h2>
+					</div>
+				</div>
+				<div class="grid clearfix" id="grid">
+					<div class="grid-sizer"></div>
+					<div class="gutter-sizer"></div>
+					<div class="grid-item hotel">
+						<div class="itembox-left">
+							<div class="itemboxMain">
+								<a href="#ex1">
+									<img src="images/lottehotel/room3.jpg" alt="롯데호텔">
+								</a>
+							</div>
+							<ul>
+									<li><a href="#ex1"><img src="images/lottehotel/room1.jpg" alt="롯데호텔"></a></li>
+									<li><a href="#ex1"><img src="images/lottehotel/room2.jpg" alt="롯데호텔"></a></li>
+									<li><a href="#ex1"><img src="images/lottehotel/room4.jpg" alt="롯데호텔"></a></li>
+									<li><a href="#ex1"><img src="images/lottehotel/room5.jpg" alt="롯데호텔"></a></li>
+							</ul>
+						</div>
+						<div class="itembox-right">
+							<h3>Lotte Hotel St. Petersburg</h3>
+							<h4>Russia - Saint Petersburg</h4>
+							<p>러시아 제2의 도시이자, 수많은 운하로 인해 ‘북방의 베네치아’로 불리는 상트페테르부르크.
+								롯데호텔상트페테르부르크는 2017년 9월, 국내 호텔브랜드 최초로 러시아에 연 두 번째 호텔인 동시에
+								5성급 호텔로 화려한 서막을 알린 바 있다. 롯데호텔상트페테르부르크는 상트페테르부르크의 가장유명한
+								명소인 성 이사악 성당 광장 바로 맞은편에 위치하며, 인근에는 세계 3대 박물관인 에르미타주 박물관을
+								비롯해 마린스키 극장 등이 있어관광지로서 최적의 입지를 자랑한다.</p>
+						</div>
+						<div class="roomkinds">
+							<h3>HOTEL</h3>
+							<span class="roomstar">
+								<img src="images/star.png" alt="평점">
+								9.7
+							</span>
+						</div>
+						<div class="roomcheck"><a href="#ex1">객실확인</a></div>
+						<div id="ex1" class="modal lottehotel">
+							<div class="modalTop">
+								<h2>Lotte Hotel St. Petersburg</h2>
+							</div>
+							<!--modalTop END-->
+							<div class="modalContent">
+								<div class="contentImgBox">
+									<div class="contentImgBox-right">
+										<ul class="contentImgBox-right-ul gallery">
+											<li data-src="images/lottehotel/room3.jpg"><img
+													src="images/lottehotel/room3.jpg" alt="롯데호텔"></li>
+											<li data-src="images/lottehotel/room1.jpg"><img
+													src="images/lottehotel/room1.jpg" alt="롯데호텔"></li>
+											<li data-src="images/lottehotel/room2.jpg"><img
+													src="images/lottehotel/room2.jpg" alt="롯데호텔"></li>
+											<li data-src="images/lottehotel/room4.jpg"><img
+													src="images/lottehotel/room4.jpg" alt="롯데호텔"></li>
+											<li data-src="images/lottehotel/room5.jpg"><img
+													src="images/lottehotel/room5.jpg" alt="롯데호텔"></li>
+										</ul>
+									</div>
+									<!--contentImgBox-right END-->
+								</div>
+								<!--contentImgBox END-->
+								<div class="contentBox clearfix">
+									<div class="contentBox-right">
+										<div class="checkinBox">
+											<form>
+												<h3>체크인 날짜를 입력하세요.</h3>
+												<div class="checkDataBox clearfix">
+													<div class="checkData checkinData">
+														<h4>CHECK-IN</h4>
+														<input type="text" class="datepicker" placeholder="yyyy-mm-dd">
+													</div>
+													<div class="checkData checkoutData">
+														<h4>CHECK-OUT</h4>
+														<input type="text" class="datepicker" placeholder="yyyy-mm-dd">
+													</div>
+												</div>
+												<p class="clearfix"><input type="text" class="adults checknumber"
+														value="1"> ADULTS / <input type="text"
+														class="children checknumber" value="0"> CHILDREN / <input
+														type="text" class="room checknumber" value="1"> ROOM</p>
+												<button>객실 확인</button>
+											</form>
+										</div>
+										<!--checkinBox END-->
+										<div class="touristSpot">
+											<h3>TOURIST SPOT</h3>
+											<ul>
+												<li>
+													<dl>
+														<dt><img src="images/lottehotel/1.jpg" alt="성 이삭 성당"></dt>
+														<dd>성 이삭 성당 - 380m</dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><img src="images/lottehotel/2.jpg" alt="그랜드펠리스"></dt>
+														<dd>그랜드 팰리스 - 1.33km</dd>
+													</dl>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													<dl>
+														<dt><img src="images/lottehotel/3.jpg"  alt="에르미타주 미술관"></dt>
+														<dd>에르미타주 미술관 - 1.2km</dd>
+													</dl>
+												</li>
+												<li>
+													<dl>
+														<dt><img src="images/lottehotel/4.jpg" alt="페트로파블롭스크"></dt>
+														<dd>페트로파블롭스크 - 2.5km</dd>
+													</dl>
+												</li>
+											</ul>
+										</div>
+										<!--touristSpot END-->
+									</div>
+									<!--contentBox-right END-->
+									<div class="contentBox-left">
+										<h2>롯데 호텔 상트페테르부르크</h2>
+										<ul class="contentAddress">
+											<li><img src="images/pin.png" alt="핀">
+												<p>2, Antonenko lane, Saint-Petersburg, Russia LOTTE HOTEL ST.PETERSBURG
+												</p>
+											</li>
+											<li><img src="images/network.png" alt="네트워크">
+												<p><a href="https://www.lottehotel.com/stpetersburg-hotel/ko.html"
+														target="_blank">https://www.lottehotel.com/stpetersburg-hotel/ko.html</a>
+													<p>
+											</li>
+											<li><img src="images/whatsapp.png" alt="callnumber">
+												<p>+7-812-336-10-00</p>
+											</li>
+										</ul>
+										<ul class="contentService">
+											<li><img src="images/service/5starhotel.png" alt="5성 호텔"></li>
+											<li><img src="images/service/freewifi.png" alt="무료 와이파이"></li>
+											<li><img src="images/service/nosmoking.png" alt="금연표시"></li>
+											<li><img src="images/service/pool.png" alt="수영장"></li>
+											<li><img src="images/service/food.png" alt="식사"></li>
+											<li><img src="images/service/cocktail.png" alt="칵테일 바"></li>
+											<li><img src="images/service/massage.png" alt="마사지"></li>
+											<li><img src="images/service/spa.png" alt="스파"></li>
+										</ul>
+										<div class="contentText">
+											<h3>Lotte Hotel St. Petersburg 의 세계적인 서비스로 슈퍼스타 대접을 받아보세요</h3>
+											<p>상트페테르부르크의 비즈니스와 문화생활 중심부에 자리 잡은 LOTTE HOTEL ST. PETERSBURG는 모이카 강(Moyka
+												River) 제방의 유서 깊은 맨션에 위치해 있습니다. 이 5성급 호텔은 궁전 광장(Palace Square)에서 도보로 15분이
+												채 걸리지 않으며, L Terrasa 옥상 바에서는 성 이삭 대성당의 멋진 전망을 감상하실 수 있습니다.<br><br>
+
+												무료 Wi-Fi가 제공되는 LOTTE HOTEL ST. PETERSBURG의 모든 객실에는 에어컨, 난방 및 조명을 제어할 수
+												있는 디지털 패널이 갖춰져 있습니다. 대리석 욕실에는 한국식 비데가 설치된 화장실, 부드러운 목욕 가운과 슬리퍼가 구비되어
+												있습니다. 스위트룸은 성 이삭 광장과 마린스키 궁전의 아름다운 전망을 자랑하며, 우아한 욕실에는 고급 불가리 세면도구가 비치되어
+												있습니다. 모든 객실에는 턴 다운(침구 정돈) 서비스가 포함됩니다.<br><br>
+
+												Lounge 레스토랑은 맛있는 조식 뷔페를, MEGUmi 레스토랑은 현지 일본 셰프가 준비한 현대적인 일본 별미를 선보입니다.
+												Siniy Most Bar에서는 다양한 고급 음료 및 미식 스낵 메뉴를 즐기실 수 있습니다.
+
+												LOTTE HOTEL ST. PETERSBURG의 현대적인 피트니스 센터와 정통 발리식의 Mandara Spa의 아쿠아존을 무료로
+												이용하실 수 있습니다.<br><br>
+
+												지하 주차장과 공항 셔틀 서비스는 추가 요금으로 사용 가능합니다. 모스코프스키 기차역(Moskovsky Train
+												Station)은 3.8km, 풀코보 국제공항은 20km 떨어져 있습니다.
+											</p>
+										</div>
+									</div>
+									<!--contentBox-left END-->
+								</div>
+								<!--contentBox END-->
+							</div>
+							<!--modalContent END-->
+							<!--<a href="#" rel="modal:close"></a>-->
+						</div>
+						<!--modal END-->
+						<div class="itemboxLine"></div>
+					</div>
+					<!--grid-item END-->
+					<div class="grid-item resolt">
+						<div class="itembox-left">
+							<div class="itemboxMain">
+								<a href="#ex1">
+									<img src="images/resolt/resolt1.jpg" alt="Avangard Health Resort">
+								</a>
+							</div>
+							<ul>
+									<li><a href="#ex1"><img src="images/resolt/resolt2.jpg" alt="Avangard Health Resort"></a></li>
+									<li><a href="#ex1"><img src="images/resolt/resolt3.jpg" alt="Avangard Health Resort"></a></li>
+									<li><a href="#ex1"><img src="images/resolt/resolt4.jpg" alt="Avangard Health Resort"></a></li>
+									<li><a href="#ex1"><img src="images/resolt/resolt5.jpg" alt="Avangard Health Resort"></a></li>
+							</ul>
+						</div>
+						<div class="itembox-right">
+							<h3>Avangard Health Resort</h3>
+							<h4>Russia - sochi</h4>
+							<p>흑해 해안에서 전용 해변을 자랑하는 Avangard Health Resort Sochi는 실내 수영장과 어린이 놀이터를 제공합니다. 무료 Wi-Fi와 무료
+								주차장이 모두 구내에 마련되어 있습니다. 리조트에서 다양한 트리트먼트 서비스도 받아보시기 바랍니다.현지의 아름다운 자연을 만끽하고 싶으시다면 아들러 해변,
+								써니 비치에 가보세요. 소치 국립 서커스, 소치 수목원도 인기 명소로 유명합니다. 시간 여유가 있다면 하이킹/바이킹 같은 액티비티도 여행 일정에 추가해
+								보세요.</p>
+						</div>
+						<div class="roomkinds">
+							<h3>RESOLT</h3>
+							<span class="roomstar">
+								<img src="images/star.png" alt="평점">9.2
+							</span>
+						</div>
+						<div class="roomcheck"><a href="#ex1">객실확인</a></div>
+						<div class="itemboxLine"></div>
+					</div>
+					<!--grid-item END-->
+					<div class="grid-item hostel">
+						<div class="itembox-left">
+							<div class="itemboxMain">
+								<a href="#ex1">
+									<img src="images/hostel/hostel1.jpg" alt="Strawberry Duck Moscow">
+								</a>
+							</div>
+							<ul>
+									<li><a href="#ex1"><img src="images/hostel/hostel5.jpg" alt="Strawberry Duck Moscow"></a></li>
+									<li><a href="#ex1"><img src="images/hostel/hostel2.jpg" alt="Strawberry Duck Moscow"></a></li>
+									<li><a href="#ex1"><img src="images/hostel/hostel3.jpg" alt="Strawberry Duck Moscow"></a></li>
+									<li><a href="#ex1"><img src="images/hostel/hostel4.jpg" alt="Strawberry Duck Moscow"></a></li>
+							</ul>
+						</div>
+						<div class="itembox-right">
+							<h3>Strawberry Duck Moscow</h3>
+							<h4>Russia - Moskva</h4>
+							<p>모스크바에 위치한 Strawberry Duck Moscow는 레닌의 묘에서 2.2km 거리에 있으며, 에어컨이 설치된 객실과 공용 라운지를 제공합니다. 이
+								숙소는 24시간 프론트 데스크, 공용 주방, 전 구역에서 접속 가능한 무료 Wi-Fi를 갖추고 있습니다. 호스텔에는 전용 주차장이 마련되어 있습니다.
+								모든 객실은 책상을 갖추고 있습니다. 객실마다 옷장도 제공됩니다.
+								Strawberry Duck Moscow에서 붉은 광장은 2.3km, 모스크바 굼백화점은 2.4km 떨어져 있습니다.</p>
+						</div>
+						<div class="roomkinds">
+							<h3>HOSTEL</h3>
+							<span class="roomstar">
+								<img src="images/star.png" alt="평점">9.8
+							</span>
+						</div>
+						<div class="roomcheck"><a href="#ex1">객실확인</a></div>
+						<div class="itemboxLine"></div>
+					</div>
+					<!--grid-item END-->
+					<div class="grid-item bnb">
+						<div class="itembox-left">
+							<div class="itemboxMain">
+								<a href="#ex1">
+									<img src="images/bnb/bnb5.jpg" alt="Ostankino Panorama">
+								</a>
+							</div>
+							<ul>
+									<li><a href="#ex1"><img src="images/bnb/bnb1.jpg" alt="Ostankino Panorama"></a></li>
+									<li><a href="#ex1"><img src="images/bnb/bnb2.jpg" alt="Ostankino Panorama"></a></li>
+									<li><a href="#ex1"><img src="images/bnb/bnb3.jpg" alt="Ostankino Panorama"></a></li>
+									<li><a href="#ex1"><img src="images/bnb/bnb4.jpg" alt="Ostankino Panorama"></a></li>
+							</ul>
+						</div>
+						<div class="itembox-right">
+							<h3>Ostankino Panorama</h3>
+							<h4>Russia - Moskva</h4>
+							<p>VDNKh, Ostankino 근처의 Petrovsko-Razumovskaya, Okruzhnaya, Vladykino 지하철역에서
+								도보 거리에있는 식물원과 Ostankino 타워의 탁 트인 전망을 제공하는 새로운 Cleverland 주거 단지의 뷰 스튜디오입니다. 세련된 디자인, 대형
+								창문, 더블 침대, 주방 공간, DELONGHI NESPRESSO 커피 머신, 식기류, 미니 바, 욕실, 요리 전부를 할 수 있습니다.</p>
+						</div>
+						<div class="roomkinds">
+							<h3>B&B</h3>
+							<span class="roomstar">
+								<img src="images/star.png" alt="평점">9.3
+							</span>
+						</div>
+						<div class="roomcheck"><a href="#ex1">객실확인</a></div>
+						<div class="itemboxLine"></div>
+					</div>
+					<!--grid-item END-->
+					<div class="grid-item hotel">
+						<div class="itembox-left">
+							<div class="itemboxMain">
+								<a href="#ex1">
+									<img src="images/radisson/radisson1.jpg" alt="Radisson Collection Hotel">
+								</a>
+							</div>
+							<ul>
+									<li><a href="#ex1"><img src="images/radisson/radisson2.jpg" alt="Radisson Collection Hotel"></a></li>
+									<li><a href="#ex1"><img src="images/radisson/radisson3.jpg" alt="Radisson Collection Hotel"></a></li>
+									<li><a href="#ex1"><img src="images/radisson/radisson4.jpg" alt="Radisson Collection Hotel"></a></li>
+									<li><a href="#ex1"><img src="images/radisson/radisson5.jpg" alt="Radisson Collection Hotel"></a></li>
+							</ul>
+						</div>
+						<div class="itembox-right">
+							<h3>Radisson Collection Hotel</h3>
+							<h4>Russia - Moskva</h4>
+							<p>모스크바의 쿠투조프스키 거리(Kutuzovskiy Prospekt)와 노비 아르바트(Novy Arbat)가 만나는 교차로에 있습니다. 호텔은 무료 Wi-Fi,
+								실내 수영장, 현대적인 스파 시설을 갖추고 있습니다.
+								Radisson Collection Hotel Moscow의 객실은 세련된 장식과 고전적인 스타일의 가구를 지니고 있으며, 평면 TV를 포함하고 있습니다.
+								투숙객은 도시 또는 안뜰을 조망할 수 있습니다. 모든 객실은 높은 천장을 자랑하며, 일부 객실은 별도의 휴식 공간을 보유하고 있습니다.</p>
+						</div>
+						<div class="roomkinds">
+							<h3>HOTEL</h3>
+							<span class="roomstar">
+								<img src="images/star.png" alt="평점">
+								9.2
+							</span>
+						</div>
+						<div class="roomcheck"><a href="#ex1">객실확인</a></div>
+						<div class="itemboxLine"></div>
+					</div>
+					<!--grid-item END-->
+					<div class="grid-item bnb">
+						<div class="itembox-left">
+							<div class="itemboxMain">
+								<a href="#ex1">
+									<img src="images/tchaikovsky/tchaikovsky1.jpg" alt="Tchaikovsky House">
+								</a>
+							</div>
+							<ul>
+									<li><a href="#ex1"><img src="images/tchaikovsky/tchaikovsky2.jpg" alt="Tchaikovsky House"></a></li>
+									<li><a href="#ex1"><img src="images/tchaikovsky/tchaikovsky3.jpg" alt="Tchaikovsky House"></a></li>
+									<li><a href="#ex1"><img src="images/tchaikovsky/tchaikovsky4.jpg" alt="Tchaikovsky House"></a></li>
+									<li><a href="#ex1"><img src="images/tchaikovsky/tchaikovsky5.jpg" alt="Tchaikovsky House"></a></li>
+							</ul>
+						</div>
+						<div class="itembox-right">
+							<h3>Tchaikovsky House</h3>
+							<h4>Russia - Saint Petersburg</h4>
+							<p>상트페테르부르크 중심부에 위치한 Tchaikovsky House는 아드미랄테이스카야 역에서 도보로 2분 이내 거리에 있으며,
+								성 이삭 대성당에서 400m 떨어져 있습니다. 숙소 전 구역에서 무료 Wi-Fi 이용이 가능합니다.
+								아침마다 숙소에서 준비해드리는 무료 유럽식 조식을 즐겨보세요.
+								 숙소 주변에도 다양한 식당들이 자리 잡고 있습니다. 이 비앤비에서는 세탁 서비스를 제공합니다.</p>
+						</div>
+						<div class="roomkinds">
+							<h3>B&B</h3>
+							<span class="roomstar">
+								<img src="images/star.png" alt="평점">9.0
+							</span>
+						</div>
+						<div class="roomcheck"><a href="#ex1">객실확인</a></div>
+						<div class="itemboxLine"></div>
+					</div>
+					<!--grid-item END-->
+					<div class="grid-item hostel">
+						<div class="itembox-left">
+							<div class="itemboxMain">
+								<a href="#ex1">
+									<img src="images/cube/cube1.jpg" alt="Qube Capsule Hotels">
+								</a>
+							</div>
+							<ul>
+									<li><a href="#ex1"><img src="images/cube/cube2.jpg" alt="Qube Capsule Hotels"></a></li>
+									<li><a href="#ex1"><img src="images/cube/cube3.jpg" alt="Qube Capsule Hotels"></a></li>
+									<li><a href="#ex1"><img src="images/cube/cube4.jpg" alt="Qube Capsule Hotels"></a></li>
+									<li><a href="#ex1"><img src="images/cube/cube5.jpg" alt="Qube Capsule Hotels"></a></li>
+							</ul>
+						</div>
+						<div class="itembox-right">
+							<h3>Qube Capsule Hotels</h3>
+							<h4>Russia - Moskva</h4>
+							<p>모스크바 자모스크보레치예(Zamoskvorechye) 지구 내 이상적인 입지를 자랑하는 Qube Capsule Hotel은 자랴디예 공원(Zaryadye Park)에서 4.2km,
+								 트레차코프 미술관(Tretyakov Gallery)에서 4.3km, 크렘린에서 5km 거리에 있습니다.
+								 이 숙소는 24시간 프론트 데스크와 공용 주방을 운영하며 전 구역에서 접속 가능한 무료 Wi-Fi를 제공합니다.
+								 투숙객은 공용 라운지, ATM 및 수하물 보관소도 이용하실 수 있습니다.</p>
+						</div>
+						<div class="roomkinds">
+							<h3>HOSTEL</h3>
+							<span class="roomstar">
+								<img src="images/star.png" alt="평점">8.8
+							</span>
+						</div>
+						<div class="roomcheck"><a href="#ex1">객실확인</a></div>
+						<div class="itemboxLine"></div>
+					</div>
+					<!--grid-item END-->
+					<div class="grid-item resolt">
+						<div class="itembox-left">
+							<div class="itemboxMain">
+								<a href="#ex1">
+									<img src="images/istra/istra1.jpg" alt="M’Istra’L Hotel & SPA">
+								</a>
+							</div>
+							<ul>
+									<li><a href="#ex1"><img src="images/istra/istra2.jpg" alt="M’Istra’L Hotel & SPA"></a></li>
+									<li><a href="#ex1"><img src="images/istra/istra3.jpg" alt="M’Istra’L Hotel & SPA"></a></li>
+									<li><a href="#ex1"><img src="images/istra/istra4.jpg" alt="M’Istra’L Hotel & SPA"></a></li>
+									<li><a href="#ex1"><img src="images/istra/istra5.jpg" alt="M’Istra’L Hotel & SPA" ></a></li>
+							</ul>
+						</div>
+						<div class="itembox-right">
+							<h3>M’Istra’L Hotel & SPA</h3>
+							<h4>Russia - Moskva</h4>
+							<p>이 5성급 호텔은 모스크바에서 북서쪽으로 60km 떨어진 Rozdestveno 부지의 Istra Lake를 따라 위치해 있습니다.
+								 M’Istra’L Hotel & SPA는 무료 Wi-Fi를 제공하며, 보트 정박지가 있는 전용 해변을 갖추고 있습니다.
+							   M’Istra’L의 넓은 객실은 에어컨을 완비하고 있으며, 우아한 인테리어로 꾸며져 있습니다.
+								 객실에서 호수 또는 숲의 전망을 즐기실 수 있습니다.</p>
+						</div>
+						<div class="roomkinds">
+							<h3>RESOLT</h3>
+							<span class="roomstar">
+								<img src="images/star.png" alt="평점">8.9
+							</span>
+						</div>
+						<div class="roomcheck"><a href="#ex1">객실확인</a></div>
+						<div class="itemboxLine"></div>
+					</div>
+					<!--grid-item END-->
+				</div>
+				<!--grid END-->
+			</div>
+			<!--!itemBox END-->
+		</div>
+		<!--contentWrap END-->
+	</section>
+	<div class="line clearfix"></div>
+	<footer>
+		<div class="footer-container clearfix">
+			<div class="footer-logo">
+				<a href="main.html">
+					<img src="images/log123.png" alt="로고">
+				</a>
+			</div><!-- footer-logo END-->
+			<div class="footer-nav">
+				<ul>
+					<li>
+						<a href="#">
+							<h4 class="underline yellow">CULTURE</h4>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<h4 class="underline yellow">BUFFET</h4>
+						</a>
+					</li>
+					<li>
+						<a href="checkin.html">
+							<h4 class="underline yellow">CHECK-IN</h4>
+						</a>
+					</li>
+					<li>
+						<a href="shop.html">
+							<h4 class="underline yellow">SHOP</h4>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<h4 class="underline yellow">CONTACT US</h4>
+						</a>
+					</li>
+				</ul>
+				<div class="subscribe">
+					<form method="post">
+						<label for="email">SUBSCRIBE</label>
+						<div class="subemail">
+							<input type="email" name="Email-Address" id="email" placeholder="ENTER YOUR EMAIL ADDRESS" required>
+							<button class="subbtn">SUBMIT</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="footer-link">
+				<img src="images/barcode.gif" alt="바코드">
+				<img src="images/qrcode.gif" alt="qr코드">
+			</div>
+			<div class="footer-follow">
+				<ul>
+					<li>
+						<p>FOLLOW US</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/twitter.png" alt="twitter icon">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/facebook.png" alt="facebook icon">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/insta.png" alt="instagram icon">
+						</a>
+					</li>
+				</ul>
+				<address>
+					<div>
+						<a href="mailto:rlawhdals228@gmail.com" class="underline red">
+							rlawhdals228@gmail.com
+						</a>
+					</div>
+					<div>
+						<a href="tel:+821026156369" class="underline red">
+							010-2615-6369
+						</a>
+					</div>
+				</address>
+			</div>
+			<!--footer-follow END-->
+		</div>
+		<!--footer-container END-->
+	</footer>
+</body>
+
+</html>

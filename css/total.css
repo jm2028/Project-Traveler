@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {	margin: 0;	padding: 0;	font-family: 'Noto Sans KR', sans-serif; }
+ul,ol {	list-style: none; }
+a,a:link { text-decoration: none;	color: #000;}
+html,body {	box-sizing: border-box;	padding: 0;	margin: 0 auto;}
+.clearfix:after {	content: '';	display: block;	clear: both;	float: none;}
+img {	vertical-align: top;}
+.com {	float: right;	font-family: 'Nanum Myeongjo', serif;	font-weight: 800;	font-size: 0.9em;	opacity: 0.6;	padding-top: 3px;}
+.line {	width: 90%;	margin: 0 auto;	border-bottom: 1px solid #000;}
+.underline {	background-repeat: no-repeat;	background-size: 0% 100%;	transition: background-size 0.4s;	color: #000;	cursor: pointer;}
+.underline.yellow {	background-image: linear-gradient(to bottom, transparent 80%, #F8CD07 100%, white);}
+.underline.red {	background-image: linear-gradient(to bottom, transparent 80%, #ef3837 100%, white);}
+.underline.blue {	background-image: linear-gradient(to top, transparent 30%, rgba(227, 165, 7, 1) 100%);	background-size: 100% 0%;}
+.underline.black {	background-image: linear-gradient(to bottom, #000 0%, #000 100%);	background-size: 0% 100%;}
+.underline.menulist {	background-image: linear-gradient(to bottom, transparent 92%, #034f9f 0%, #034f9f 100%);	background-size: 0% 100%;}
+.underline:hover {	background-size: 100% 100%;}
+.underline.on {	background-size: 100% 100%;}
+.grid-item:hover .underline.black {	color: #fff;	background-size: 100% 100%;	transition: .3s;}
+.move {	position: fixed;	display: none;	right: 1.5vw;	bottom: 1.5vw;	z-index: 999;	padding: 3px;	cursor: pointer;}
+.move img {	width: 13px;	opacity: 0.4;	transition: .4s;}
+.move:hover img {	opacity: 1;}
+.dpnone {	display: none;}
+.gallery img {	cursor: pointer;}
+#lg-download {	display: none !important;}
+.lg-toolbar {	z-index: 2500 !important;}
+.lg-outer {	z-index: 2400 !important;}

@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>shop</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/total.css">
+	<link rel="stylesheet" href="css/gnb.css">
+	<link rel="stylesheet" href="css/shop.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.easing.1.3.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/mainscript.js"></script>
+	<script>
+		$(function () {
+			$('.grid-item').mouseenter(function () {
+				$(this).find('img').css('transform', 'matrix(1.05, 0, 0, 1.05, 0,-20)');
+			}).mouseleave(function () {
+				$(this).find('img').css('transform', 'matrix(1, 0, 0, 1, 0, 0)');
+			});
+		});
+	</script>
+</head>
+<body data-title="shoppage" id="shop">
+	<header>
+		<div class="move">
+			<span id="top_move"><img src="images/uparrow.png" alt="uparrow"></span>
+		</div>
+		<div class="wraper shadow">
+			<div class="wraper-inner">
+				<h1><a href="main.html"><img class="nlogo" src="images/log123.png" alt="logo"></a></h1>
+			</div>
+		</div>
+		<nav id="gnb">
+			<div id="menu">
+				<div class="hamburger" id="hamburger-1">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+				<div class="parts part-1">
+					<a href="#" class="underline blue">
+						<h2>CULTURE</h2>
+					</a>
+				</div>
+				<div class="parts part-2">
+					<a href="#" class="underline blue">
+						<h2>BUFFET</h2>
+					</a>
+				</div>
+				<div class="parts part-3">
+					<a href="checkin.html" class="underline blue">
+						<h2>CHECK-IN</h2>
+					</a>
+				</div>
+				<div class="parts part-4">
+					<a href="shop.html" class="underline blue">
+						<h2>SHOP</h2>
+					</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<section id="contents" class="clearfix">
+		<div class="shop">
+			<h2>SHOP</h2>
+		</div>
+		<div class="contentsWrap clearfix">
+			<div class="menuBox">
+				<h2 class="listTitle">LIST</h2>
+				<ul class="menuBoxList">
+					<li>
+						<h3 class="allList menulist on underline">ALL</h3>
+					</li>
+					<li>
+						<h3 class="magazineList menulist underline">MAGAZINE</h3>
+					</li>
+					<li>
+						<h3 class="artprintsList menulist underline">ART PRINTS</h3>
+					</li>
+					<li>
+						<h3 class="booksList menulist underline">BOOKS</h3>
+					</li>
+				</ul>
+			</div>
+			<div class="itemBox">
+				<div class="itemBoxTitle">
+					<div class="itemBoxTitleWrap">
+						<h2>ALL</h2>
+						<h2>MAGAZINE</h2>
+						<h2>ART PRINTS</h2>
+						<h2>BOOKS</h2>
+					</div>
+				</div>
+				<div class="grid clearfix" id="grid">
+					<div class="grid-sizer"></div>
+					<div class="gutter-sizer"></div>
+					<div class="grid-item magazine">
+						<a href="#">
+							<dl>
+								<dt><img src="images/issue8.jpg" alt="8월호"></dt>
+								<dt><span class="underline black">MAGAZINE</span></dt>
+								<dd><span class="underline black">Issue No.8 Russia</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item artprints">
+						<a href="#">
+							<dl>
+								<dt><img src="images/artprints/lechatchic.png" alt="le chat chic"></dt>
+								<dt><span class="underline black">ART PRINTS</span></dt>
+								<dd><span class="underline black">Le Chat Chic</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item books">
+						<a href="#">
+							<dl>
+								<dt><img src="images/books/zoominrussia.jpg" alt="zoom in russia"></dt>
+								<dt><span class="underline black">BOOKS</span></dt>
+								<dd><span class="underline black">줌 인 러시아</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item artprints">
+						<a href="#">
+							<dl>
+								<dt><img src="images/artprints/softstrokes2.png" alt="soft strokes2"></dt>
+								<dt><span class="underline black">ART PRINTS</span></dt>
+								<dd><span class="underline black">Soft Strokes #2</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item magazine">
+						<a href="#">
+							<dl>
+								<dt><img src="images/issue7.jpg" alt="7월호"></dt>
+								<dt><span class="underline black">MAGAZINE</span></dt>
+								<dd><span class="underline black">Issue No.7 France</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item books">
+						<a href="#">
+							<dl>
+								<dt><img src="images/books/aparis.jpg" alt="A Paris"></dt>
+								<dt><span class="underline black">BOOKS</span></dt>
+								<dd><span class="underline black">À Paris;</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item magazine">
+						<a href="#">
+							<dl>
+								<dt><img src="images/issue6.jpg" alt="6월호"></dt>
+								<dt><span class="underline black">MAGAZINE</span></dt>
+								<dd><span class="underline black">Issue No.6 Sweden</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item books">
+						<a href="#">
+							<dl>
+								<dt><img src="images/books/europe.jpg" alt="혼자, 천천히, 북유럽"></dt>
+								<dt><span class="underline black">BOOKS</span></dt>
+								<dd><span class="underline black">혼자, 천천히, 북유럽</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item artprints">
+						<a href="#">
+							<dl>
+								<dt><img src="images/artprints/xavier1.png" alt="Xavier Corberó #1"></dt>
+								<dt><span class="underline black">ART PRINTS</span></dt>
+								<dd><span class="underline black">Xavier Corberó #1</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item artprints">
+						<a href="#">
+							<dl>
+								<dt><img src="images/artprints/xavier2.png" alt="Xavier Corberó #2"></dt>
+								<dt><span class="underline black">ART PRINTS</span></dt>
+								<dd><span class="underline black">Xavier Corberó #2</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item magazine">
+						<a href="#">
+							<dl>
+								<dt><img src="images/issue5.jpg" alt="5월호"></dt>
+								<dt><span class="underline black">MAGAZINE</span></dt>
+								<dd><span class="underline black">Issue No.5 Australia</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item books">
+						<a href="#">
+							<dl>
+								<dt><img src="images/books/books1.jpg" alt="나의 두려움을 여기 두고 간다"></dt>
+								<dt><span class="underline black">BOOKS</span></dt>
+								<dd><span class="underline black">나의 두려움을 여기 두고 간다</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item books">
+						<a href="#">
+							<dl>
+								<dt><img src="images/books/tripful.jpg" alt="Tripful JEJU"></dt>
+								<dt><span class="underline black">BOOKS</span></dt>
+								<dd><span class="underline black">Tripful JEJU</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item artprints">
+						<a href="#">
+							<dl>
+								<dt><img src="images/artprints/howtowearahat.png" alt="How To Wear A Hat"></dt>
+								<dt><span class="underline black">ART PRINTS</span></dt>
+								<dd><span class="underline black">How To Wear A Hat</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item artprints">
+						<a href="#">
+							<dl>
+								<dt><img src="images/artprints/apart.png" alt="Things Fall Apart #1"></dt>
+								<dt><span class="underline black">ART PRINTS</span></dt>
+								<dd><span class="underline black">Things Fall Apart #1</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item magazine">
+						<a href="#">
+							<dl>
+								<dt><img src="images/issue4.jpg" alt="4월호"></dt>
+								<dt><span class="underline black">MAGAZINE</span></dt>
+								<dd><span class="underline black">Issue No.4 China</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item books">
+						<a href="#">
+							<dl>
+								<dt><img src="images/books/light.jpg" alt="지금 행복하고 싶어"></dt>
+								<dt><span class="underline black">BOOKS</span></dt>
+								<dd><span class="underline black">지금 행복하고 싶어</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item artprints">
+						<a href="#">
+							<dl>
+								<dt><img src="images/artprints/spot.png" alt="Spot The Difference"></dt>
+								<dt><span class="underline black">ART PRINTS</span></dt>
+								<dd><span class="underline black">Spot The Difference</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item books">
+						<a href="#">
+							<dl>
+								<dt><img src="images/books/georgia.jpg" alt="Georgia"></dt>
+								<dt><span class="underline black">BOOKS</span></dt>
+								<dd><span class="underline black">Georgia</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item magazine">
+						<a href="#">
+							<dl>
+								<dt><img src="images/issue3.jpg" alt="3월호"></dt>
+								<dt><span class="underline black">MAGAZINE</span></dt>
+								<dd><span class="underline black">Issue No.3 Germany</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item artprints">
+						<a href="#">
+							<dl>
+								<dt><img src="images/artprints/softstrokes1.png" alt="soft strokes1"></dt>
+								<dt><span class="underline black">ART PRINTS</span></dt>
+								<dd><span class="underline black">Soft Strokes #1</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item magazine">
+						<a href="#">
+							<dl>
+								<dt><img src="images/issue2.jpg" alt="2월호"></dt>
+								<dt><span class="underline black">MAGAZINE</span></dt>
+								<dd><span class="underline black">Issue No.2 Italy</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item books">
+						<a href="#">
+							<dl>
+								<dt><img src="images/books/portugal.jpg" alt="한번쯤 포르투갈"></dt>
+								<dt><span class="underline black">BOOKS</span></dt>
+								<dd><span class="underline black">한번쯤 포르투갈</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item books">
+						<a href="#">
+							<dl>
+								<dt><img src="images/books/iceland.jpg" alt="아이슬란드"></dt>
+								<dt><span class="underline black">BOOKS</span></dt>
+								<dd><span class="underline black">아이슬란드 자동차여행</span></dd>
+							</dl>
+						</a>
+					</div>
+					<div class="grid-item magazine">
+						<a href="#">
+							<dl>
+								<dt><img src="images/issue1.jpg" alt="1월호"></dt>
+								<dt><span class="underline black">MAGAZINE</span></dt>
+								<dd><span class="underline black">Issue No.1 Greece</span></dd>
+							</dl>
+						</a>
+					</div>
+				</div>
+				<!--grid END-->
+			</div>
+			<!--!itemBox END-->
+		</div>
+		<!--contentWrap END-->
+	</section>
+	<div class="line clearfix"></div>
+	<footer>
+		<div class="footer-container clearfix">
+			<div class="footer-logo">
+				<a href="main.html">
+					<img src="images/log123.png" alt="logo">
+				</a>
+			</div><!-- footer-logo END-->
+			<div class="footer-nav">
+				<ul>
+					<li>
+						<a href="#">
+							<h4 class="underline yellow">CULTURE</h4>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<h4 class="underline yellow">BUFFET</h4>
+						</a>
+					</li>
+					<li>
+						<a href="checkin.html">
+							<h4 class="underline yellow">CHECK-IN</h4>
+						</a>
+					</li>
+					<li>
+						<a href="shop.html">
+							<h4 class="underline yellow">SHOP</h4>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<h4 class="underline yellow">CONTACT US</h4>
+						</a>
+					</li>
+				</ul>
+				<div class="subscribe">
+					<form method="post">
+						<label for="email">SUBSCRIBE</label>
+						<div class="subemail">
+							<input type="email" name="Email-Address" id="email" placeholder="ENTER YOUR EMAIL ADDRESS" required>
+							<button class="subbtn">SUBMIT</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="footer-link">
+				<img src="images/barcode.gif" alt="barcode">
+				<img src="images/qrcode.gif" alt="qrcode">
+			</div>
+			<div class="footer-follow">
+				<ul>
+					<li>
+						<p>FOLLOW US</p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/twitter.png" alt="twitter icon">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/facebook.png" alt="facebook icon">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/insta.png" alt="instagram icon">
+						</a>
+					</li>
+				</ul>
+				<address>
+					<div>
+						<a href="mailto:rlawhdals228@gmail.com" class="underline red">
+							rlawhdals228@gmail.com
+						</a>
+					</div>
+					<div>
+						<a href="tel:+821026156369" class="underline red">
+							010-2615-6369
+						</a>
+					</div>
+				</address>
+			</div>
+			<!--footer-follow END-->
+		</div>
+		<!--footer-container END-->
+	</footer>
+</body>
+
+</html>
